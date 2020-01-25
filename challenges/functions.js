@@ -17,10 +17,14 @@ function consume(a, b, cb) {
 */
 function add(num1, num2) {
   return num1 + num2;
-}
+};
 
 function multiply(n1, n2) {
   return n1 * n2;
+};
+
+function greeting(firstName, lastName) {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`;
 }
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 // console.log(consume(2, 2, add)); // 4
@@ -32,7 +36,8 @@ function multiply(n1, n2) {
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: 
+// Explanation: Internal is not within nestedfunction's local scope.  So nestedfunction will 
+//look outside its own scope in the outer scope to access it.
 
 
 const external = "I'm outside the function";
