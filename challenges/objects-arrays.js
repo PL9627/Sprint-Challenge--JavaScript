@@ -71,7 +71,9 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = graduates.map(uni => {
+const universities = [];
+  
+  graduates.map(uni => {
   return uni.university;
 });
 universities.sort();
@@ -96,7 +98,7 @@ console.log(unisWithUni);
 for (let i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes('Uni')) {
     unisWithUni.push(graduates[i].university);
-  }
+  };
 }
 // ==== ADVANCED Array Methods ====
 
@@ -135,7 +137,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 const lowCaseAnimalNames = [];
 console.log(lowCaseAnimalNames);
 
-zooAnimals.map(lowCaseArr => {
+zooAnimals.map((lowCaseArr) => {
   lowCaseAnimalNames.push(lowCaseArr.animal_name.toLowerCase());
 })
 /* Request 3: .filter() 
@@ -143,7 +145,8 @@ zooAnimals.map(lowCaseArr => {
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = zooAnimals.filter((lowPopArr) => {
+const lowPopulationAnimals = [];
+zooAnimals.filter((lowPopArr) => {
   return lowPopArr.population < 5;
 });
 console.log(lowPopulationAnimals);
