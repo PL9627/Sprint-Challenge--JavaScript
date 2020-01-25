@@ -7,56 +7,6 @@
 */
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
-// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
-// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
-
-// Using your dinosaur objects, log answers to these questions:
-
-// How much did tyrannosaurus weigh?
-console.log(dinoOne.weight);
-
-const dinoOne = {
-  name: 'tyrannosaurus',
-  diet: 'carnivorous',
-  weight: '7000kg',
-  length: '12m',
-  period: 'Late Cretaceous',
-};
-// What was the diet of a velociraptor?
-console.log(dinoTwo.diet);
-
-const dinoTwo = {
-  name: 'velociraptor',
-  diet: 'carnivorous',
-  weight: '15kg',
-  length: '1.8m',
-  period: 'Late Cretaceous',
-}
-// How long was a stegosaurus?
-console.log(dinoThree.length);
-
-const dinoThree = {
-  name: 'stegosaurus',
-  diet: 'herbivorous',
-  weight: '2000kg',
-  length: '9m',
-  period: 'Late Jurassic',
-}
-// What time period did tyrannosaurus live in?
-console.log(dinoOne.period);
-
-const dinoOne = {
-  name: 'tyrannosaurus',
-  diet: 'carnivorous',
-  weight: '7000kg',
-  length: '12m',
-  period: 'Late Cretaceous',
-};
-// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
-
 const dinoOne = {
   name: 'tyrannosaurus',
   diet: 'carnivorous',
@@ -68,6 +18,39 @@ const dinoOne = {
     return 'RAWERSRARARWERSARARARRRR!';
   }
 };
+// stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
+const dinoTwo = {
+  name: 'stegosaurus',
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic',
+}
+// velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+const dinoThree = {
+  name: 'velociraptor',
+  diet: 'carnivorous',
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceous',
+}
+// Using your dinosaur objects, log answers to these questions:
+
+// How much did tyrannosaurus weigh?
+console.log(dinoOne.weight);
+
+// What was the diet of a velociraptor?
+console.log(dinoThree.diet);
+
+// How long was a stegosaurus?
+console.log(dinoThree.length);
+
+// What time period did tyrannosaurus live in?
+console.log(dinoOne.period);
+
+// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
+console.log(dinoOne.roar());
+
 // ==== Arrays ====
 
 // Given an array of college graduates.  Complete the following requests using any array method you like
@@ -175,7 +158,7 @@ const populationTotal = 0;
 console.log(populationTotal);
 
 zooAnimals.reduce((total, newArr) => {
-  return total += newArr.population;
+  return total + newArr.population;
 }, 0)
 /*
 
